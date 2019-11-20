@@ -3,7 +3,14 @@
   --titles: h3;
 }
 
-
+.bImage {
+  background: url(images/bcg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter:
+  
+  
+}
 
 .wrapper {
   display: grid;
@@ -17,6 +24,7 @@
 .box {
   background-color: #444;
   color: #fff;
+  background-color: crimson;
   border-radius: 5px;
   padding: 25px;
   font-size: 150%;
@@ -62,7 +70,8 @@
   opacity: 0.8;
   background: #fff;
   font-family: 'Courier New', Courier, monospace;
-  font-size: medium;
+  font-size: small;
   font-style: italic;
   color: var(--blue);
+
 }
