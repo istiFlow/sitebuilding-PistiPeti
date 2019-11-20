@@ -1,0 +1,49 @@
+:root {
+  --blue:#060f64;
+  --titles: h3;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap : 10px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 80px 420px 80px 200px 200px 200px;
+  justify-content: center;
+  margin: 100px;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.header {
+  grid-column: 4;
+  grid-row: 1;
+}
+.event {
+  max-width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title{
+  grid-column: 1 / 5 ;
+  justify-items: center;
+}
+.foodImage{
+  grid-column: 1 / 2;
+}
+.foodDescription{
+  grid-column: 2 / 5;
+}
+
+
+
+
+.footer{
+  font-size: 10px;
+}
