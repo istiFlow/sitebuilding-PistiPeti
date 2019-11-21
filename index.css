@@ -35,7 +35,7 @@
   justify-content: center;
   margin: 20px;
 }
-.wrapperContact{
+.wrapperContact {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 200px 200px 200px 200px;
@@ -54,12 +54,9 @@
   opacity: 1;
 }
 
-
-
 .header {
   text-align: center;
   margin-left: 18px;
-  
 }
 .event {
   grid-column: 1/4;
@@ -94,7 +91,6 @@
   opacity: 0.8;
 }
 
-
 .footer {
   grid-column: 1 / 5;
   justify-items: center;
@@ -105,8 +101,6 @@
   font-style: italic;
   color: var(--blue);
   text-align: center;
-
-  
 }
 
 .chooseFood {
@@ -118,6 +112,7 @@
   font-size: small;
   font-style: italic;
   color: var(--blue);
+  padding: 12px;
 }
 .yourDetails {
   grid-column: 3/5;
@@ -128,6 +123,7 @@
   font-size: small;
   font-style: italic;
   color: var(--blue);
+  padding: 12px;
 }
 .contactPage {
   grid-column: 1/5;
@@ -139,8 +135,8 @@
   font-style: italic;
   color: var(--blue);
 }
-.contactList{
+.contactList {
   font-weight: bold;
-  color:var(--green);
+  color: var(--green);
   font-size: var(--titles1);
 }
