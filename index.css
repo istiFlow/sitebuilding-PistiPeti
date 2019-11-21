@@ -123,7 +123,7 @@
 .yourDetails {
   grid-column: 3/5;
   justify-items: center;
-  opacity: 0.8;
+  opacity: 0.9;
   background: rgb(226, 199, 199);
   font-family: "Courier New", Courier, monospace;
   font-size: small;
