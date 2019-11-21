@@ -1,6 +1,8 @@
 :root {
   --blue: #060f64;
-  --titles: h3;
+  --green: rgb(17, 107, 9);
+  --titles1: h3;
+  --titles2: h1;
 }
 
 .bImage {
@@ -17,7 +19,7 @@
   justify-content: center;
   margin: 100px;
 }
-.wrapperOrders{
+.wrapperOrders {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 200px 200px 200px 200px;
@@ -90,7 +92,7 @@
   font-style: italic;
   color: var(--blue);
 }
-.yourDetails{
+.yourDetails {
   grid-column: 3/5;
   justify-items: center;
   opacity: 0.8;
