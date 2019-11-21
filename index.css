@@ -1,7 +1,7 @@
 :root {
   --blue: #060f64;
   --green: rgb(17, 107, 9);
-  --titles1: h3;
+  --titles1: 20px;
   --titles2: h1;
 }
 
@@ -104,6 +104,9 @@
   font-size: small;
   font-style: italic;
   color: var(--blue);
+  text-align: center;
+
+  
 }
 
 .chooseFood {
@@ -138,4 +141,6 @@
 }
 .contactList{
   font-weight: bold;
+  color:var(--green);
+  font-size: var(--titles1);
 }
