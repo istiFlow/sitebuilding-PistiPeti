@@ -84,8 +84,80 @@
         </fieldset>
       </div>
 
-      <div class="box yourDetails">hello</div>
-      <div class="box title">Send</div>
+      <div class="box yourDetails">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Név</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Telefonszám</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter phone number"
+            />
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">e-mail cím</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          Fizetési mód:
+          <div class="form-group form-check">
+            <input type="radio" name="gender" value="male" /> Készpénz<br />
+            <input type="radio" name="gender" value="female" /> Bankkártya<br />
+            <input type="radio" name="gender" value="female" /> Szép kártya
+            (OTP, K&H, MKB)<br />
+            <input type="radio" name="gender" value="female" /> Erzsébet
+            utalvány<br />
+            <input type="radio" name="gender" value="other" /> Bitcoin<br />
+            <input type="radio" name="gender" value="other" /> Megoldjuk máshogy
+          </div>
+          <br />
+          <br />
+          <div class="form-group form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Elfogadom a feltéteket</label
+            >
+          </div>
+        </form>
+      </div>
+
+      <button class="box title" type="submit" class="btn btn-primary">
+        Submit
+      </button>
+
       <div class="box footer">fooootttrrrre</div>
     </div>
   </body>
