@@ -35,6 +35,14 @@
   justify-content: center;
   margin: 20px;
 }
+.wrapperContact{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 80px 200px;
+  justify-content: center;
+  margin: 20px;
+}
 
 .box {
   background-color: #444;
@@ -86,6 +94,7 @@
   opacity: 0.8;
 }
 
+
 .footer {
   grid-column: 1 / 5;
   justify-items: center;
@@ -112,6 +121,16 @@
   justify-items: center;
   opacity: 0.8;
   background: rgb(226, 199, 199);
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  font-style: italic;
+  color: var(--blue);
+}
+.contactPage {
+  grid-column: 1/5;
+  justify-items: center;
+  opacity: 0.8;
+  background: #fff;
   font-family: "Courier New", Courier, monospace;
   font-size: small;
   font-style: italic;
