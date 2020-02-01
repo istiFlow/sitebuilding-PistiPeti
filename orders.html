@@ -1,48 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="orders.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>orders</title>
-</head>
-<body>
-    <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Név</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted"></small>
-        </div><div class="form-group">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Orders</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="bImage">
+    <div class="wrapperOrders">
+      <div>
+        <a href="./index.html"
+          ><button type="button" class="box">HOME</button></a
+        >
+      </div>
+      <div>
+        <a href="./foods.html"
+          ><button type="button" class="box ">FOODS</button></a
+        >
+      </div>
+      <div>
+        <a href="./orders.html"
+          ><button type="button" class="box ">ORDER</button></a
+        >
+      </div>
+      <div>
+        <div>
+          <a href="contact.html"
+            ><button type="button" class="box header">CONTACT</button></a
+          >
+        </div>
+      </div>
+
+      <div class="chooseFood">
+        <p>
+          <label
+            >Pizza
+            <select id="choose" name="choose">
+              <option value="choose one" selected="selected"
+                >choose a pizza</option
+              >
+              <option value="Tutti">Tutti</option>
+              <option value="Corleone">Corleone</option>
+              <option value="Santana">Santana</option>
+              <option value="Falusi">Falusi</option>
+              <option value="Tutti">Tutti</option>
+              <option value="Sonka-gomba-kukorica">Sonka-gomba-kukorica</option>
+              <option value="Négysajtos"> Négysajtos</option>
+              <option value="Mexikói">Mexikói</option>
+              <option value="Húsimádó">Húsimádó</option>
+              <option value="Escobar">Escobar</option>
+            </select>
+          </label>
+        </p>
+        <input type="checkbox" name="pizzaextra1" value="ketchup" /> extra
+        ketchup<br />
+        <input type="checkbox" name="pizzaextra2" value="mustard" /> extra
+        mustard<br />
+        <input type="checkbox" name="pizzaextra3" value="Mayonnaise" /> extra
+        Mayonnaise<br />
+        <div>&nbsp;</div>
+        <p>
+          <label
+            >Hamburger
+            <select id="choose" name="choose">
+              <option value="choose one" selected="selected"
+                >choose a pizza</option
+              >
+              <option value="Tutti">Tutti</option>
+              <option value="Corleone">Corleone</option>
+              <option value="Santana">Santana</option>
+              <option value="Falusi">Falusi</option>
+              <option value="Tutti">Tutti</option>
+              <option value="Sonka-gomba-kukorica">Sonka-gomba-kukorica</option>
+              <option value="Négysajtos"> Négysajtos</option>
+              <option value="Mexikói">Mexikói</option>
+              <option value="Húsimádó">Húsimádó</option>
+              <option value="Escobar">Escobar</option>
+            </select>
+          </label>
+        </p>
+        <input type="checkbox" name="hambExtra1" value="chili" /> extra chili<br />
+        <input type="checkbox" name="hambExtra2" value="beans" /> extra beans<br />
+        <input type="checkbox" name="hambExtra3" value="salad" checked /> extra
+        salad<br />
+        <div>&nbsp;</div>
+        <fieldset>
+          <legend>When would you like to get your food</legend>
+
+          <input type="radio" name="time1" /> Asap
+          <input type="radio" name="time2" /> 6:00-12:00
+          <input type="radio" name="time3" /> 12:00-18:00
+        </fieldset>
+      </div>
+
+      <div class="yourDetails">
+        <form class="textfieldsInOrders">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="form-group">
             <label for="exampleInputEmail1">Telefonszám</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted"></small>
-          </div><div class="form-group">
-            <label for="exampleInputEmail1">e-mail cím</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter phone number"
+            />
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        Fizetési mód:
-        <div class="form-group form-check">
-                <input type="radio" name="gender" value="male"> Készpénz<br>
-                <input type="radio" name="gender" value="female"> Bankkártya<br>
-                <input type="radio" name="gender" value="female"> Szép kártya (OTP, K&H, MKB)<br>
-                <input type="radio" name="gender" value="female"> Erzsébet utalvány<br>
-                <input type="radio" name="gender" value="other"> Bitcoin<br>
-                <input type="radio" name="gender" value="other"> Megoldjuk máshogy
-              </div>
-              <br>
-              <br>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Elfogadom a feltéteket</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Rendelés</button>
-      </form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">e-mail cím</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          
+        </form>
+        <div>&nbsp;</div>
+        <form>
+          Fizetési mód:
+          <div>
+            <input type="radio" name="gender" value="male" /> Készpénz<br />
+            <input type="radio" name="gender" value="female" /> Bankkártya<br />
+            <input type="radio" name="gender" value="female" /> Szép kártya
+            (OTP, K&H, MKB)<br />
+            <input type="radio" name="gender" value="female" /> Erzsébet
+            utalvány<br />
+            <input type="radio" name="gender" value="other" /> Bitcoin<br />
+            <input type="radio" name="gender" value="other" /> Megoldjuk máshogy
+          </div>
+          <br />
+          <br />
+          <div>
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Elfogadom a feltéteket</label
+            >
+          </div>
+        </form>
+  </div>
+    <button class="box title" type="submit" class="btn btn-primary">
+        Submit
+    </button>
+      <div class="box footer">
+          Food Festival | +36 62/ 555-2342 | Tax number: 111111111-1-11
+      </div>
 </body>
 </html>
 
